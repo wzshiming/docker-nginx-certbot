@@ -1,3 +1,5 @@
 #!/bin/sh
 
-crond && nginx -g "daemon off;"
+crond -f &
+
+nginx -g "daemon off;"
